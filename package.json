@@ -1,0 +1,19 @@
+{
+  "name": "admin-react",
+  "version": "0.1.0",
+  "description": "AdminLTE 3 React library",
+  "main": "index.js",
+  "author": "mc17uulm <marco@code-leaf.de>",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "url": "https://github.com/mc17uulm/admin-react",
+    "type": "git"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "react": "^18.1.0"
+  }
+}
