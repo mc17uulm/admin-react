@@ -1,4 +1,4 @@
-export { Generic } from './components/Generic';
+export { Generic, type GenericProps } from './components/Generic';
 export { Tab, type TabPane } from './components/Tab';
 export { Row, Col } from './components/Row';
 export { Button } from './components/Button';
