@@ -1,3 +1,4 @@
+import React from 'react';
 import {Generic, GenericProps} from "./Generic";
 import {Size} from "../types";
 import {useClassName} from "../hooks/useClassName";
