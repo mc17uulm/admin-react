@@ -9,6 +9,18 @@ export { Content } from './components/Content';
 export { Footer, FooterVersion } from './components/Footer';
 export { Header, Breadcrumb } from './components/Header';
 export { Navbar, NavbarNav, NavItem, NavLink } from './components/Navbar';
+export { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } from './components/Modal';
+export { 
+    type InputType, 
+    type InputProps, 
+    Input, 
+    InputGroup, 
+    Addon, 
+    InputPrepend, 
+    InputAppend, 
+    InputGroupText, 
+    Checkbox
+} from './components/Input';
 
 // Elements
 export { LoginBox, LoginLogo, LoginBoxMsg } from './elements/Login';
