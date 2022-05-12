@@ -4,7 +4,7 @@
   "description": "AdminLTE 3 React library",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.js",
+  "types": "dist/index.d.ts",
   "author": "mc17uulm <marco@code-leaf.de>",
   "license": "MIT",
   "private": true,
