@@ -10,6 +10,7 @@ export { Header, Breadcrumb } from './components/Header';
 export { Navbar, NavbarNav, NavItem, NavLink } from './components/Navbar';
 export { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } from './components/Modal';
 export { type InputType, type InputProps, Input, InputGroup, Addon, InputPrepend, InputAppend, InputGroupText, Checkbox } from './components/Input';
+export { type SidebarLink, Sidebar, MainSidebar, SidebarMenu, SidebarItem, SidebarBrand, SidebarSearchPanel, SidebarUserPanel, SidebarHeader } from './elements/Sidebar';
 export { LoginBox, LoginLogo, LoginBoxMsg } from './elements/Login';
 export { type Badge, MenuDropdown, MenuItem } from './elements/Menu';
 export { SearchBlock } from './elements/SearchBlock';

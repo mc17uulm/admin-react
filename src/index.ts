@@ -21,6 +21,17 @@ export {
     InputGroupText, 
     Checkbox
 } from './components/Input';
+export {
+    type SidebarLink,
+    Sidebar,
+    MainSidebar,
+    SidebarMenu,
+    SidebarItem,
+    SidebarBrand,
+    SidebarSearchPanel,
+    SidebarUserPanel,
+    SidebarHeader
+} from './elements/Sidebar';
 
 // Elements
 export { LoginBox, LoginLogo, LoginBoxMsg } from './elements/Login';
