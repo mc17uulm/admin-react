@@ -19,3 +19,5 @@ export { useClassName } from './hooks/useClassName';
 export { useDefault } from './hooks/useDefault';
 export { useModal } from './hooks/useModal';
 export { useOnOutsideClick } from './hooks/useOnOutsideClick';
+export { useBodyClass, useBodyStyle } from './hooks/useBody';
+export { useSidebar } from './hooks/useSidebar';
