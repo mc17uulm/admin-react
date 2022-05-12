@@ -4,11 +4,13 @@
   "description": "AdminLTE 3 React library",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.js",
   "author": "mc17uulm <marco@code-leaf.de>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "rollup -c"
+    "build": "yarn run clean && rollup -c",
+    "clean": "rimraf dist"
   },
   "repository": {
     "url": "https://github.com/mc17uulm/admin-react",
@@ -20,6 +22,7 @@
     "@rollup/plugin-typescript": "^8.3.2",
     "@types/react": "^18.0.9",
     "react": "^18.1.0",
+    "rimraf": "^3.0.2",
     "rollup": "^2.72.1",
     "rollup-plugin-dts": "^4.2.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -29,5 +32,8 @@
   },
   "peerDependencies": {
     "react": "^18.1.0"
-  }
+  },
+  "files": [
+    "/dist"
+  ]
 }
