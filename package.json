@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "author": "mc17uulm <marco@code-leaf.de>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "yarn run clean && rollup -c",
     "clean": "rimraf dist"
