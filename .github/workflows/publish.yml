@@ -1,0 +1,38 @@
+name: Build and publish package
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile
+
+      - name: Build dist
+        run: yarn build
+
+      - name: 'Setup node env'
+        uses: action/setup-node@v1
+        with:
+          node-version: '16.x'
+          registry-url: ${{ secrets.REGISTRY }}
+      
+      - name: 'Publish package'
+        run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
