@@ -27,7 +27,7 @@ jobs:
         run: yarn build
 
       - name: 'Setup node env'
-        uses: action/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: '16.x'
           registry-url: ${{ secrets.REGISTRY }}
