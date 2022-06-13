@@ -25,12 +25,6 @@ jobs:
 
       - name: Build dist
         run: yarn build
-
-      - name: 'Setup node env'
-        uses: actions/setup-node@v1
-        with:
-          node-version: '16.x'
-          registry-url: ${{ secrets.REGISTRY }}
       
       - name: 'Publish package'
         run: yarn publish
