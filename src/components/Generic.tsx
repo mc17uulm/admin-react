@@ -1,8 +1,11 @@
-import React from "react";
+import React, {CSSProperties} from "react";
 import {useClassName} from "../hooks/useClassName";
 
 export interface GenericProps {
     className?: string,
+    style?: CSSProperties,
+    id?: string,
+    key?: string,
     children?: React.ReactNode
 }
 
@@ -18,7 +21,7 @@ export const Generic = (props : Props) => {
     )
 
     return (
-        <div className={className}>
+        <div className={className} style={props.style} id={props.id} key={props.key}>
             {props.children}
         </div>
     )

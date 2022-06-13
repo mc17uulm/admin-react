@@ -32,6 +32,14 @@ export {
     SidebarUserPanel,
     SidebarHeader
 } from './elements/Sidebar';
+export {
+    Table,
+    TableHead,
+    TableHeadColumn,
+    TableBody,
+    TableColumn,
+    TableRow
+} from './components/Table';
 
 // Elements
 export { LoginBox, LoginLogo, LoginBoxMsg } from './elements/Login';
