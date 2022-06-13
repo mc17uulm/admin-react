@@ -25,17 +25,47 @@ export const Table = (props : TableProps) => {
     );
 }
 
-export const TableHead = (props : GenericProps) => <Generic name='thead' {...props} />
+export const TableHead = (props : GenericProps) => {
+    return (
+        <thead {...props}>
+            {props.children}
+        </thead>
+    )
+}
 Table.Head = TableHead;
 
-export const TableBody = (props : GenericProps) => <Generic name='tbody' {...props} />
+export const TableBody = (props : GenericProps) => {
+    return (
+        <tbody {...props}>
+        {props.children}
+        </tbody>
+    )
+}
 Table.Body = TableBody;
 
-export const TableRow = (props : GenericProps) => <Generic name='tr' {...props} />
+export const TableRow = (props : GenericProps) => {
+    return (
+        <tr {...props}>
+        {props.children}
+        </tr>
+    )
+}
 Table.Row = TableRow;
 
-export const TableHeadColumn = (props : GenericProps) => <Generic name='th' {...props} />
+export const TableHeadColumn = (props : GenericProps) => {
+    return (
+        <th {...props}>
+        {props.children}
+        </th>
+    )
+}
 Table.HeadColumn = TableHeadColumn;
 
-export const TableColumn = (props : GenericProps) => <Generic name='td' {...props} />
+export const TableColumn = (props : GenericProps) => {
+    return (
+        <td {...props}>
+        {props.children}
+        </td>
+    )
+}
 Table.Column = TableColumn;
