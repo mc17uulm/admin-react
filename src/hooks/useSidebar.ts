@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 interface useSidebarResponse {
     open: boolean,
@@ -7,12 +7,16 @@ interface useSidebarResponse {
 
 export const useSidebar = (value : boolean = true) : useSidebarResponse => {
 
-    const [open, setOpen] = useState<boolean>(value);
+    const [open, setOpen] = useState<boolean>(true);
+
+    useEffect(() => {
+        setOpen(value);
+    }, [value]);
 
     const handleToggle = () => {
         open ?
-            document.body.classList.remove('sidebar-collapse') : 
-            document.body.classList.add('sidebar-collapse');
+            document.body.classList.add('sidebar-collapse') :
+            document.body.classList.remove('sidebar-collapse');
         setOpen(!open);
     }
 

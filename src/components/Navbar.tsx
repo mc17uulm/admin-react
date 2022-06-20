@@ -1,6 +1,6 @@
 import React, { MouseEvent } from "react";
-import { useClassName } from "../umd";
 import { Generic, GenericProps } from "./Generic";
+import {useClassName} from "../hooks/useClassName";
 
 export const Navbar = (props : GenericProps) => {
 

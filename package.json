@@ -8,6 +8,7 @@
   "author": "mc17uulm <marco@code-leaf.de>",
   "license": "MIT",
   "scripts": {
+    "dev": "next dev",
     "build": "yarn run clean && rollup -c",
     "clean": "rimraf dist"
   },
@@ -20,7 +21,11 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
     "@types/react": "^18.0.9",
+    "eslint": "^8.18.0",
+    "eslint-config-next": "^12.1.6",
+    "next": "^12.1.6",
     "react": "^18.1.0",
+    "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.72.1",
     "rollup-plugin-dts": "^4.2.1",

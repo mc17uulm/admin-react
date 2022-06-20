@@ -2,7 +2,7 @@ import React, { useMemo, useState, MouseEvent } from 'react';
 import { Icon } from '../components/Icon';
 import { useDefault } from '../hooks/useDefault';
 import { useClassName } from '../hooks/useClassName';
-import { Generic, GenericProps } from '../umd';
+import {Generic, GenericProps } from '../components/Generic';
 
 export interface SidebarLink {
     title: string,
